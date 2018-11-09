@@ -10,6 +10,7 @@ function pairDancers(men, women){
 
   const { gender, spares } = men.isEmpty() ? { gender: 'female', spares: women } : { gender: 'male', spares: men };
   console.log(`There are ${spares.size()} ${gender} dancers waiting to dance`);
+  return spares;
 }
 
 if(require.main === module){

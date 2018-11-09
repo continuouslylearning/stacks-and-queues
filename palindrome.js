@@ -10,7 +10,7 @@ function isPalindrome(s){
     stack.push(c);
   }
 
-  while(peek(stack)){
+  while(!stack.isEmpty()){
     backwards += stack.pop();
   }
 
